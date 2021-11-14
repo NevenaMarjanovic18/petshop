@@ -1,0 +1,363 @@
+ul { padding: 0 }
+a { color: #d13400; text-decoration: none; display: block;  }
+
+.menu-mobile {
+  float: left;
+  margin: 0 12px 0 12px;
+  display: block;
+  background-image: url('http://www.alwaystwisted.com/playground/img/sprites.png');
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  margin-top: 2px;
+}
+
+.menu-button { background-position: -32px -292px; }
+
+li:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+li:hover a {
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 48em) { 
+  #menu-button { visibility: hidden }
+}
+
+[role="navigation"] { 
+  background: #5C5C5C;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+[role="navigation"] ul {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+[role="navigation"] li {
+  color: #6d6d6d;
+  padding-left: 24px;
+  position: relative;
+  display: block;
+
+}
+
+@media screen and (min-width: 48em) { 
+  [role="navigation"] li { border-left: none }
+}
+
+[role="navigation"] a {
+  position: relative;
+  display: block;
+  line-height: 48px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+[role="navigation"], [role="main"] { width: 100% }
+
+.js #wrapper {
+  display: -webkit-box;
+  display:    -moz-box;
+  display:         box;
+  -webkit-box-orient: horizontal;
+     -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+      box-orient: horizontal;
+}
+
+
+[role="main"], [role="banner"] {
+  -webkit-box-shadow: -3px 0px 4px 0.5 1px 2px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: -3px 0px 4px 0.5 1px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: -3px 0px 4px 0.5 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.js [role="navigation"] {
+  margin-left: -100%;
+  -webkit-box-ordinal-group: 1;
+     -moz-box-ordinal-group: 1;
+      -ms-box-ordinal-group: 1;
+    	  box-ordinal-group: 1;
+  -webkit-transition: all 0.1s ease-in-out;
+     -moz-transition: all 0.1 S ease-in-out;
+      -ms-transition: all 0.1s ease-in-out;
+  	   -o-transition: all 0.1s ease-in-out;
+  		  transition: all 0.1s ease-in-out;
+}
+
+[role="banner"] {
+  width: 100%;
+}
+.js [role="banner"] {
+  margin-left: 0;
+  -webkit-box-ordinal-group: 2;
+     -moz-box-ordinal-group: 2;
+    	-ms-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+}
+.js [role="main"] { 
+  margin-left: -100%;
+  margin-top: 50px;
+  -webkit-box-ordinal-group: 3;
+     -moz-box-ordinal-group: 3;
+      -ms-box-ordinal-group: 3;
+          box-ordinal-group: 3;
+  padding: 1.5%;
+}
+
+.active-nav [role="navigation"] { background: #5C5C5C; margin-left: 0; width: 80%; }
+
+.active-nav #clear-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 800px;
+  width: 20%;
+  background: transparent;
+  z-index: 4;
+}
+
+
+@media all and (min-width: 768px) {
+    
+
+  .js [role="navigation"] {
+    background: #5C5C5C;
+    width: 30%;
+    margin-left: 0;
+    -webkit-box-ordinal-group: 2;
+       -moz-box-ordinal-group: 2;
+    	  -ms-box-ordinal-group: 2;
+    		  box-ordinal-group: 2;
+  }
+
+  .js [role="main"], .js [role="banner"] {
+    width: 70%;
+  }
+  
+
+  .active-nav #clear-btn { display: none }
+
+}
+
+@media all and (min-width: 800px) { 
+.js #wrapper {
+    -webkit-box-orient: vertical;
+       -moz-box-orient: vertical;
+    	  -ms-box-orient: vertical;
+    		  box-orient: vertical;
+}
+  .js [role="navigation"] {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+  [role="navigation"] li{
+    display: inline-block;
+    padding: 0 12px;
+    border: none;
+    border-right: 1px solid #333;
+  }
+
+}
+html{
+    background: #f7f7f7f7;
+}
+
+body{
+    background: white;
+    max-width: 70vw;
+    margin:0  auto;
+    color: rgb(40, 49, 68);
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+header , footer{
+    background: #333a40;
+    color: white;
+}
+
+
+#navbar ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;   
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+    color: rgb(51, 142, 216);
+}
+
+#navbar ul li {
+    float:left;
+    list-style: none;
+    padding:5px;
+   
+}
+#navbar ul li a{
+padding:20px;
+  display:block;
+   
+}
+
+h1, nav{
+    display: inline-block;
+  padding:15px;
+}
+
+main{
+    width: 680px;
+    display: inline-block;
+    padding: 10px;
+}
+
+aside{
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    
+}
+
+ ul{
+   list-style: none;
+}
+
+.product {
+  background: beige;
+  width: 12vw;
+  height: 56vh;
+  border: 1px solid black;
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  float: left;
+  position: relative;
+}
+
+img.cardImage {
+  border-top-left-radius: 20px;border-top-right-radius: 20px;
+  height: 180px; width: 18vw;
+}
+
+div.cardTitle {
+  font-size: 26px; margin-left: 3vw;
+}
+
+button.toCart {
+  border: none;
+  float: right;
+  margin-top: 25px;
+  padding-right: 15px;
+  transform: scale(0.8);
+}
+
+button.toCart:hover {
+  transform: scale(1);
+}
+
+div.description {
+  padding-left: 10px; 
+}
+
+p.price {
+  float: left; font-size: 20px;
+  padding-left: 10px;  
+  position: absolute;
+  bottom: 0;
+}
+
+.dodajUKorpu {
+  position: absolute;
+  bottom: 20px;
+  right: 5px;
+  cursor: pointer;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.botton{
+    padding: 10px;
+    display:inline-block;
+}
+
+.botton:last-of-type{
+    background-color: rgb(51, 142, 216);
+    color:black;
+}
+
+.botton:last-of-type:hover{
+   color:white;  
+}
+
+p:first-of-type{
+    color:rgb(211, 69, 69);
+}
+
+p{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.menu{
+    display: none;
+    background-color: #333a40;
+    padding:10px;
+    position: absolute;
+    z-index: 1;
+    min-width: 80px;
+    text-align: center;
+}
+
+.drop:hover .menu{
+ display: block;   
+}
+
+#menud{
+    display: none;
+    background-color: #333a40;
+    padding:30px;
+    position: absolute;
+    z-index: 2;
+    min-width: 30px;
+    text-align: center;
+    left:120px;
+    top:160px;
+}
+
+.dropp:hover #menud{
+    display: block;   
+}
+
+.dropp:hover  {
+    background-color: rgb(233, 236, 241); 
+}
+
+body {
+    min-height: 90vh;
+    background: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-pet-shop-poster-background-image_151193.jpg");
+    background-size: 100%;
+  }    
+
+
+
