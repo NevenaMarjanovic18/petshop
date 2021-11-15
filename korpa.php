@@ -16,7 +16,7 @@
             </ul>
         </nav>
 
-<div id="w">
+<div id="cartDiv">
 <?php include "./konekcija/db.php";
 session_start();
 global $connnection;
@@ -69,4 +69,5 @@ echo "<tr class='checkoutrow'>
 </div>";
 ?>
 </div>
+<script src="skripte/korpa.js"></script>
 <body style="padding: 0px 0px;">
