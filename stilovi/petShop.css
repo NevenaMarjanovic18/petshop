@@ -288,6 +288,30 @@ p.price {
   cursor: pointer;
 }
 
+.izmeni {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  cursor: pointer;
+  color: white;
+  background: #42ba96;
+  border: none;
+  height: 23px;
+  padding: 4px 6px;
+}
+
+.obrisi {
+  position: absolute;
+  bottom: 20px;
+  width: 50px;
+  right: 5px;
+  cursor: pointer;
+  color: white;
+  background: #df4759;
+  border: none;
+  height: 23px;
+  padding: 2px 3px;
+}
 
 img{
     max-width: 100%;

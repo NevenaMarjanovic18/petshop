@@ -23,7 +23,7 @@ $adresa = mysqli_real_escape_string($connnection, $adresa);
         $narudzbina_id = mysqli_insert_id($connnection);
         for($i=0;$i<count($_SESSION['korpa']);$i++){
             $id=$_SESSION['korpa'][$i];
-            $query1 = "INSERT INTO stavka_porudzbine(porudzbina_id, proizvod_id) VALUES ($narudzbina_id, $id)";
+            $query1 = "INSERT INTO stavka_narudzbine(porudzbina_id, proizvod_id) VALUES ($narudzbina_id, $id)";
             $result = mysqli_query($connnection, $query1);
         }
         unset($_SESSION['korpa']);

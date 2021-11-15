@@ -12,7 +12,9 @@
 <body>
 <nav role="navigation">
             <ul>
-              <li><a href="/telefoni-master/index.html">Pocetna</a></li><li><a href="/telefoni-master/korpa.php"><i style="font-size: 20px; color: white;" class="fa fa-shopping-cart"></i></a></li><li><a href="/telefoni-master/prijavi_se.html">Uloguj Se</a></li>
+              <li><a href="/petshop/index.html">Pocetna</a></li>
+              <li><a href="/petshop/korpa.php"><i style="font-size: 20px; color: white;" class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="/petshop/prijavi_se.html">Uloguj Se</a></li>
             </ul>
         </nav>
 

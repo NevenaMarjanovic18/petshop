@@ -74,4 +74,31 @@ $(document).ready(function () {
             data:{id:id}
         });
     }); 
+
+    $(".proizvodi").on('click','.izmeni', function(){
+      let id=this.id;
+          $.ajax({
+              url:'operacije/proizvodi/vrati_proizvod.php',
+              type:'POST',
+              data:{id:id},
+              success:function(proizvod){
+              if(!proizvod.error){
+                  console.log('vratio');
+                  $('.forme').html(proizvod);
+              }
+          }
+          });
+      });
+
+      $(".proizvodi").on('click','.obrisi', function(){
+        let id=this.id;
+            $.ajax({
+                url:'operacije/proizvodi/obrisi_proizvod.php',
+                type:'POST',
+                data:{id:id},
+                success:function(){
+                    location.reload();
+            }
+            });
+        });
 });
